@@ -47,37 +47,52 @@ device = sh1106(serial, width=WIDTH, height=HEIGHT, rotate=2)
 
 # Menu states
 #SYS_MENU = 0
-#MUSIC_MENU = 1
-#VIDEO_MENU = 2
-#NETWORK_MENU = 3
-#STORAGE_MENU = 4
+#MEDIA_MENU = 1
 #current_menu_state = SYS_MENU
 
 # End of code to utilize later
 
-def display_info(bios, memory, ip, fan_speed, temp):
+def display_info(bios, memory, ip, fan_speed, temp, artist, track):
     with canvas(device) as draw:
         draw.text((0, 0), f"{bios}", font=FONT, fill=255)
         draw.text((0, 10), f"Free Mem: {memory}", font=FONT, fill=255)
         draw.text((0, 20), f"IP: {ip}", font=FONT, fill=255)
         draw.text((0, 30), f"Fan: {fan_speed} | CPU: {temp}", font=FONT, fill=255)
+        draw.text((0, 40), f"{artist} - {track}", font=FONT, fill=255)
 def main():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.bind(("", LISTEN_PORT))
     
+    display_message = False  # Flag to track if we should update the LCD screen
+    
     while True:
         data, _ = sock.recvfrom(1024)
         message = data.decode("utf-8")
-        parts = dict(item.split(": ") for item in message.split(", "))
-        
-        bios = parts.get("BIOS", "N/A")
-        memory = parts.get("Free Mem", "N/A")
-        ip = parts.get("IP", "N/A")
-        fan_speed = parts.get("Fan", "N/A")
-        temp = parts.get("CPU", "N/A")
-        
-        display_info(bios, memory, ip, fan_speed, temp)
-        time.sleep(5)
+        message_music = data.decode("utf-8")
+        message_video = data.decode("utf-8")
+
+        if message == "PING":
+            display_message = True  # Set the flag to True to allow display update
+
+        elif display_message:  # Only process system info message if "PING" was received first
+            parts = dict(item.split(": ") for item in message.split(", "))
+
+            bios = parts.get("BIOS", "N/A")
+            memory = parts.get("Free Mem", "N/A")
+            ip = parts.get("IP", "N/A")
+            fan_speed = parts.get("Fan", "N/A")
+            temp = parts.get("CPU", "N/A")
+            artist = parts.get("Artist", "N/A")
+            track = parts.get("Track", "N/A")
+            album = parts.get("Album", "N/A")
+            time_during = parts.get("Time", "N/A")
+            time_remaining = parts.get("Time Remaining", "N/A")
+
+
+            display_info(bios, memory, ip, fan_speed, temp, artist, track)
+            display_message = False  # Reset the flag after displaying the message
+
+        time.sleep(1)  # Wait for a while before checking for the next message
 
 if __name__ == "__main__":
     main()
