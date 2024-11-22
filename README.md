@@ -11,9 +11,12 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 - A solid internet connection on your Raspberry Pi and your Xbox (ideas, ideas...)
 - Python 2.7 on XBMC4Xbox, Python 3+ for Raspberry Pi.
 
-## How to use:
-- Extract XBMCDisplay into any Q:\scripts folder (ideally CortanaDisplay)
+## Raspberry Pi Instructions:
+- Copy "raspberry.pi" anywhere on your Raspberry Pi.
 - Launch "raspberry.py" on your Raspberry Pi so that it's running in the background.
+
+## Xbox Instructions:
+- Extract XBMCDisplay into any Q:\scripts folder (ideally CortanaDisplay)
 - Launch "default.py" from the Scripts manager in XBMC and select "Start Remote Display"
 - You should immediately start seeing stats on your Raspberry Pi display!
 
@@ -23,5 +26,6 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 
 ## TODO: 
 - Clean up code further
+- Generate systemctl startup file for Pi to launch the script on boot.
 - [Integrate multi-page support like in my other script, PiHOLED.](https://github.com/faithvoid/PiHOLED)
 - [Integrate with Cortana Wireless to also function as a network adapter for the original Xbox.](https://github.com/faithvoid/script.cortanawireless)
