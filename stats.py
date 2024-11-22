@@ -13,6 +13,7 @@ def get_system_info():
     ip_address = xbmc.getIPAddress()
     fan_speed = xbmc.getInfoLabel("System.FanSpeed")
     cpu_temp = xbmc.getInfoLabel("System.CPUTemperature")
+    gpu_temp = xbmc.getInfoLabel("System.GPUTemperature")
     
     # Music
     track = xbmc.getInfoLabel("MusicPlayer.Title")
@@ -32,6 +33,7 @@ def get_system_info():
         "ip_address": ip_address,
         "fan_speed": fan_speed,
         "cpu_temp": cpu_temp,
+        "gpu_temp": gpu_temp,
         # Music
         "track": track,
         "artist": artist,
@@ -69,7 +71,7 @@ def broadcast_system_info():
         system_info = get_system_info()
         sanitized_info = {k: sanitize(v) for k, v in system_info.items()}  # Sanitize all fields
         
-        message = "BIOS: {bios_version}, Free Mem: {free_memory}, IP: {ip_address}, Fan: {fan_speed}, CPU: {cpu_temp}, Track: {track}".format(**sanitized_info)
+        message = "BIOS: {bios_version}, Free Mem: {free_memory}, IP: {ip_address}, Fan: {fan_speed}, CPU: {cpu_temp}, GPU: {gpu_temp}, Track: {track}".format(**sanitized_info)
         
         try:
             sock.sendto(message, (BROADCAST_IP, BROADCAST_PORT))
