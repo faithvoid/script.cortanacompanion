@@ -21,6 +21,32 @@ def get_system_info():
         "cpu_temp": cpu_temp
     }
 
+def get_music_info():
+    track = xbmc.getInfoLabel("MusicPlayer.Title")
+    artist = xbmc.getInfoLabel("MusicPlayer.Artist")
+    album = xbmc.getInfoLabel("MusicPlayer.Album")
+    time_during = xbmc.getInfoLabel("MusicPlayer.Time")
+    time_remaining = xbmc.getInfoLabel("MusicPlayer.TimeRemaining")
+    return {
+        "track": track,
+        "artist": artist,
+        "album": album,
+        "time_during": time_during,
+        "time_remaining": time_remaining
+    }
+
+def get_video_info():
+    title = xbmc.getInfoLabel("VideoPlayer.Title")
+    artist = xbmc.getInfoLabel("VideoPlayer.Artist")
+    album = xbmc.getInfoLabel("VideoPlayer.Album")
+    time_during = xbmc.getInfoLabel("VideoPlayer.Time")
+    time_remaining = xbmc.getInfoLabel("VideoPlayer.TimeRemaining")
+    return {
+        "title": title,
+        "video_time_during": video_time_during,
+        "video_time_remaining": video_time_remaining
+    }
+
 # We love text sanitization, yay!
 def sanitize(text):
     try:
