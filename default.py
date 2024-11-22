@@ -9,9 +9,6 @@ def main():
         ("- System Stats - )", ""),
         ("Enable", "RunScript(Q:\\scripts\\RemoteStats\\stats.py)"),
         ("Disable", "StopScript(Q:\\scripts\\RemoteStats\\stats.py)"),
-        ("- Media Info - )", ""),
-        ("Enable", "RunScript(Q:\\scripts\\RemoteStats\\media.py)"),
-        ("Disable", "StopScript(Q:\\scripts\\RemoteStats\\media.py)"),
     ]
     
     feed_list = [name for name, _ in feeds]
