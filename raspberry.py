@@ -52,12 +52,12 @@ device = sh1106(serial, width=WIDTH, height=HEIGHT, rotate=2)
 
 # End of code to utilize later
 
-def display_info(bios, memory, ip, fan_speed, temp, artist, track):
+def display_info(bios, memory, ip, fan_speed, cpu_temp, artist, track):
     with canvas(device) as draw:
         draw.text((0, 0), f"{bios}", font=FONT, fill=255)
         draw.text((0, 10), f"Free Mem: {memory}", font=FONT, fill=255)
         draw.text((0, 20), f"IP: {ip}", font=FONT, fill=255)
-        draw.text((0, 30), f"Fan: {fan_speed} | CPU: {temp}", font=FONT, fill=255)
+        draw.text((0, 30), f"Fan: {fan_speed} | CPU: {cpu_temp}", font=FONT, fill=255)
         draw.text((0, 40), f"{artist} - {track}", font=FONT, fill=255)
 def main():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -81,7 +81,7 @@ def main():
             memory = parts.get("Free Mem", "N/A")
             ip = parts.get("IP", "N/A")
             fan_speed = parts.get("Fan", "N/A")
-            temp = parts.get("CPU", "N/A")
+            cpu_temp = parts.get("CPU", "N/A")
             artist = parts.get("Artist", "N/A")
             track = parts.get("Track", "N/A")
             album = parts.get("Album", "N/A")
@@ -89,7 +89,7 @@ def main():
             time_remaining = parts.get("Time Remaining", "N/A")
 
 
-            display_info(bios, memory, ip, fan_speed, temp, artist, track)
+            display_info(bios, memory, ip, fan_speed, cpu_temp, artist, track)
             display_message = False  # Reset the flag after displaying the message
 
         time.sleep(1)  # Wait for a while before checking for the next message
