@@ -20,9 +20,7 @@ def display_info(bios, memory, ip, fan_speed, temp):
         draw.text((0, 0), f"{bios}", font=FONT, fill=255)
         draw.text((0, 10), f"Free Mem: {memory}", font=FONT, fill=255)
         draw.text((0, 20), f"IP: {ip}", font=FONT, fill=255)
-        draw.text((0, 30), f"Fan: {fan_speed}", font=FONT, fill=255)
-        draw.text((0, 40), f"CPU: {temp}", font=FONT, fill=255)
-
+        draw.text((0, 30), f"Fan: {fan_speed} | CPU: {temp}", font=FONT, fill=255)
 def main():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.bind(("", LISTEN_PORT))
