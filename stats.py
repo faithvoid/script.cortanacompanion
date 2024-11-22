@@ -6,6 +6,7 @@ import xbmcaddon
 BROADCAST_IP = "192.168.1.255"  # Replace with the correct broadcast IP for your network
 BROADCAST_PORT = 3074
 
+# Typical XBMC command stuff, grabs system info from info labels.
 def get_system_info():
     # XBMC4Xbox-specific system info retrieval
     bios_version = xbmc.getInfoLabel("system.bios")
@@ -28,6 +29,7 @@ def sanitize(text):
     except:
         return "N/A"
 
+# Network code to broadcast to raspberry.py! 
 def broadcast_system_info():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
