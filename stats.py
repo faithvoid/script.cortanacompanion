@@ -37,7 +37,7 @@ def broadcast_system_info():
         system_info = get_system_info()
         sanitized_info = {k: sanitize(v) for k, v in system_info.items()}  # Sanitize all fields
         
-        message = "{bios_version}, Free Mem: {free_memory}, IP: {ip_address}, Fan: {fan_speed}, CPU: {cpu_temp}".format(**sanitized_info)
+        message = "BIOS: {bios_version}, Free Mem: {free_memory}, IP: {ip_address}, Fan: {fan_speed}, CPU: {cpu_temp}".format(**sanitized_info)
         
         try:
             sock.sendto(message, (BROADCAST_IP, BROADCAST_PORT))
