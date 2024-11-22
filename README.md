@@ -1,4 +1,4 @@
-# script.xbmcdisplay
+# script.cortanadisplay
 A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, designed as an alternative to hard LCD mods.
 
 ## Requirements:
@@ -9,7 +9,7 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 - Python 2.7 on XBMC4Xbox, Python 3+ for Raspberry Pi.
 
 ## How to use:
-- Extract XBMCDisplay into any Q:\scripts folder (ideally XBMCDisplay)
+- Extract XBMCDisplay into any Q:\scripts folder (ideally CortanaDisplay)
 - Launch "raspberry.py" on your Raspberry Pi so that it's running in the background.
 - Launch "default.py" from the Scripts manager in XBMC and select "Start Remote Display"
 - You should immediately start seeing stats on your Raspberry Pi display!
