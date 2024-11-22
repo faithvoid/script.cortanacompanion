@@ -8,7 +8,6 @@ BROADCAST_PORT = 3074
 
 # Typical XBMC command stuff, grabs system info from info labels.
 def get_system_info():
-    # XBMC4Xbox-specific system info retrieval
     bios_version = xbmc.getInfoLabel("system.bios")
     free_memory = xbmc.getInfoLabel("System.FreeMemory")
     ip_address = xbmc.getIPAddress()
