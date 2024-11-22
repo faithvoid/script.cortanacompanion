@@ -5,7 +5,7 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 
 
 ## Requirements:
-- Any Raspberry Pi model with a GPIO interface, with python3 and python3-luma.oled installed.
+- Any Raspberry Pi model with a GPIO interface, with python3, python3-rpi.gpio & python3-luma.oled installed.
 - Either an SH1106 (recommended) or SSD1306 display (requires a line or two of modification to work)
 - An Xbox running some variation of XBMC4Xbox (XBMC4Gamers and XBMC-Emustation should work just fine).
 - A solid internet connection on your Raspberry Pi and your Xbox (ideas, ideas...)
@@ -13,6 +13,7 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 
 ## Raspberry Pi Instructions:
 - Copy "raspberry.pi" anywhere on your Raspberry Pi.
+- Install the required dependencies (sudo apt install python3 python3-rpi.gpio python3-luma.oled)
 - Launch "raspberry.py" on your Raspberry Pi so that it's running in the background.
 
 ## Xbox Instructions:
