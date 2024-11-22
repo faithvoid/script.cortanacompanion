@@ -47,7 +47,10 @@ device = sh1106(serial, width=WIDTH, height=HEIGHT, rotate=2)
 
 # Menu states
 #SYS_MENU = 0
-#MEDIA_MENU = 1
+#MUSIC_MENU = 1
+#VIDEO_MENU = 2
+#NETWORK_MENU = 3
+#STORAGE_MENU = 4
 #current_menu_state = SYS_MENU
 
 # End of code to utilize later
