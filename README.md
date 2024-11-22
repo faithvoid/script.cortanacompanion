@@ -17,7 +17,7 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 
 ## Xbox Instructions:
 - Extract XBMCDisplay into any Q:\scripts folder (ideally CortanaDisplay)
-- Launch "default.py" from the Scripts manager in XBMC and select "Start Remote Display"
+- Launch "default.py" from the Scripts manager in XBMC and select "Start Cortana Display", and select "Stop Cortana Display" to stop the script.
 - You should immediately start seeing stats on your Raspberry Pi display! Note that this does nothing outside of XBMC, so that means when you're in-game your system stats won't update until you boot into XBMC again!
 
 ## Bugs:
