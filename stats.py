@@ -47,7 +47,9 @@ def get_system_info():
 # We love text sanitization, yay!
 def sanitize(text):
     try:
-        return text.encode('ascii', 'ignore')  # Ignore non-ASCII characters
+        # Remove non-ASCII characters
+        sanitized_text = re.sub(r'[^\x00-\x7F]+', '', text)
+        return sanitized_text
     except:
         return "N/A"
 
