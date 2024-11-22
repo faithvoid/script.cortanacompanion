@@ -70,8 +70,8 @@ def main():
         bios = parts.get("BIOS", "N/A")
         memory = parts.get("Free Mem", "N/A")
         ip = parts.get("IP", "N/A")
-        fan_speed = parts.get("Fan Speed", "N/A")
-        temp = parts.get("CPU Temp", "N/A")
+        fan_speed = parts.get("Fan", "N/A")
+        temp = parts.get("CPU", "N/A")
         
         display_info(bios, memory, ip, fan_speed, temp)
         time.sleep(5)
