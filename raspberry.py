@@ -58,7 +58,7 @@ def display_info(bios, memory, ip, fan_speed, cpu_temp, artist, track):
         draw.text((0, 10), f"Free Mem: {memory}", font=FONT, fill=255)
         draw.text((0, 20), f"IP: {ip}", font=FONT, fill=255)
         draw.text((0, 30), f"Fan: {fan_speed} | CPU: {cpu_temp}", font=FONT, fill=255)
-        draw.text((0, 40), f"{artist} - {track}", font=FONT, fill=255)
+        draw.text((0, 40), f"{gpu_temp}", font=FONT, fill=255)
 def main():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.bind(("", LISTEN_PORT))
@@ -81,6 +81,7 @@ def main():
             memory = parts.get("Free Mem", "N/A")
             ip = parts.get("IP", "N/A")
             fan_speed = parts.get("Fan", "N/A")
+            gpu_temp = parts.get("GPU", "N/A")
             cpu_temp = parts.get("CPU", "N/A")
             artist = parts.get("Artist", "N/A")
             track = parts.get("Track", "N/A")
