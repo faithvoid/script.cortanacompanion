@@ -1,5 +1,5 @@
 # script.cortanadisplay
-A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, designed to emulate the front LCD/OLED screen of a hardmodded Xbox for softmodded units.
+A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, designed to emulate the front LCD/OLED screen of a hardmodded Xbox for softmodded units. 
 
 ![Cortana Display running on a Pi Zero W](https://github.com/user-attachments/assets/8f7967d1-0f36-470a-a11d-6e1d9a6dd0da)
 
@@ -19,13 +19,16 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 ## Xbox Instructions:
 - Extract XBMCDisplay into any Q:\scripts folder (ideally CortanaDisplay)
 - Launch "default.py" from the Scripts manager in XBMC and select "Start Remote Display"
-- You should immediately start seeing stats on your Raspberry Pi display!
+- You should immediately start seeing stats on your Raspberry Pi display! Note that this does nothing outside of XBMC, so that means when you're in-game your system stats won't update until you boot into XBMC again!
 
 ## Bugs:
-- BIOS name alternates between actual BIOS name and "busy". This seems to be XBMC behaviour, not sure how to fix it!
+- BIOS name alternates between actual BIOS name and "Busy". This seems to be XBMC behaviour, not sure how to fix it!
 
 ## TODO: 
 - Clean up code further
 - Generate systemctl startup file for Pi to launch the script on boot.
 - [Integrate multi-page support like in my other script, PiHOLED.](https://github.com/faithvoid/PiHOLED). Default page will be system staps, then moving the joystick will select either Music or Movie information.
 - [Integrate with Cortana Wireless to also function as a network adapter for the original Xbox.](https://github.com/faithvoid/script.cortanawireless)
+
+# Why?
+I just think it's neat. :) As someone using a 1.6 softmod I love how the LCD on hardmods looks and wanted to replicate something for softmod users to place on/around their Xbox with no hardware modification required.
