@@ -17,7 +17,10 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 - Launch "default.py" from the Scripts manager in XBMC and select "Start Remote Display"
 - You should immediately start seeing stats on your Raspberry Pi display!
 
+## Bugs:
+- Fan speed will say "N/A" on first boot. This usually sorts itself out after 1-2 refreshes.
+- CPU Temperature may not be able to be logged via softmods and may also show up as "N/A", more testing needs to be done! 
+
 ## TODO: 
-- Send/receive new information every 5-10 seconds at most.
 - Clean up code further
 - [Integrate with Cortana Wireless to also function as a network adapter for the original Xbox.](https://github.com/faithvoid/script.cortanawireless)
