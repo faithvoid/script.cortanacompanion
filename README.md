@@ -22,8 +22,7 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 - You should immediately start seeing stats on your Raspberry Pi display!
 
 ## Bugs:
-- Fan speed will say "N/A" on first boot. This usually sorts itself out after 1-2 refreshes.
-- CPU Temperature may not be able to be logged via softmods and may also show up as "N/A", more testing needs to be done! 
+- BIOS name alternates between actual BIOS name and "busy". This seems to be XBMC behaviour, not sure how to fix it!
 
 ## TODO: 
 - Clean up code further
