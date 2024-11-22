@@ -7,7 +7,6 @@ BROADCAST_IP = "192.168.1.113"  # Replace with the correct broadcast IP for your
 BROADCAST_PORT = 3074
 
 # Typical XBMC command stuff, grabs system info from info labels.
-
 def get_system_info():
     bios_version = xbmc.getInfoLabel("system.bios")
     free_memory = xbmc.getInfoLabel("System.FreeMemory")
@@ -17,15 +16,13 @@ def get_system_info():
     
     # Music
     track = xbmc.getInfoLabel("MusicPlayer.Title")
-    artist_music = xbmc.getInfoLabel("MusicPlayer.Artist")
-    album_music = xbmc.getInfoLabel("MusicPlayer.Album")
-    time_during_music = xbmc.getInfoLabel("MusicPlayer.Time")
-    time_remaining_music = xbmc.getInfoLabel("MusicPlayer.TimeRemaining")
+    artist = xbmc.getInfoLabel("MusicPlayer.Artist")
+    album = xbmc.getInfoLabel("MusicPlayer.Album")
+    time_during = xbmc.getInfoLabel("MusicPlayer.Time")
+    time_remaining = xbmc.getInfoLabel("MusicPlayer.TimeRemaining")
     
     # Video
-    title_video = xbmc.getInfoLabel("VideoPlayer.Title")
-    artist_video = xbmc.getInfoLabel("VideoPlayer.Artist")
-    album_video = xbmc.getInfoLabel("VideoPlayer.Album")
+    title = xbmc.getInfoLabel("VideoPlayer.Title")
     time_during_video = xbmc.getInfoLabel("VideoPlayer.Time")
     time_remaining_video = xbmc.getInfoLabel("VideoPlayer.TimeRemaining")
     
