@@ -37,14 +37,12 @@ def get_system_info():
         "cpu_temp": cpu_temp,
         # Music
         "track": track,
-        "artist_music": artist_music,
-        "album_music": album_music,
-        "time_during_music": time_during_music,
-        "time_remaining_music": time_remaining_music,
+        "artist": artist,
+        "album": album,
+        "time_during": time_during,
+        "time_remaining": time_remaining,
         # Video
-        "title_video": title_video,
-        "artist_video": artist_video,
-        "album_video": album_video,
+        "title": title,
         "time_during_video": time_during_video,
         "time_remaining_video": time_remaining_video
     }
