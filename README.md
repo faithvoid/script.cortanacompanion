@@ -23,4 +23,5 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 
 ## TODO: 
 - Clean up code further
+- [Integrate multi-page support like in my other script, PiHOLED.](https://github.com/faithvoid/PiHOLED)
 - [Integrate with Cortana Wireless to also function as a network adapter for the original Xbox.](https://github.com/faithvoid/script.cortanawireless)
