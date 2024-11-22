@@ -1,8 +1,7 @@
 # script.cortanadisplay
 A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, designed to emulate the front LCD/OLED screen of a hardmodded Xbox for softmodded units. 
 
-![Cortana Display running on a Pi Zero W](https://github.com/user-attachments/assets/8f7967d1-0f36-470a-a11d-6e1d9a6dd0da)
-
+![Cortana Display running on a Pi Zero W](https://github.com/user-attachments/assets/c8952880-e96d-4888-bd0e-02a33a586471)
 
 ## Requirements:
 - Any Raspberry Pi model with a GPIO interface, with python3, python3-rpi.gpio & python3-luma.oled installed.
