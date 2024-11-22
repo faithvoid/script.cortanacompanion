@@ -6,12 +6,12 @@ import sys
 def main():
     dialog = xbmcgui.Dialog()
     feeds = [
-        ("Start Remote Display)", "RunScript(Q:\\scripts\\RemoteStats\\stats.py)"),
-        ("Stop Remote Display", "RunScript(Q:\\scripts\\RemoteStats\\stats.py)"),
+        ("Start Cortana Display)", "RunScript(Q:\\scripts\\RemoteStats\\stats.py)"),
+        ("Stop Cortana Display", "RunScript(Q:\\scripts\\RemoteStats\\stats.py)"),
     ]
     
     feed_list = [name for name, _ in feeds]
-    selected = dialog.select(u"XBMC Raspberry Pi Feed", feed_list)
+    selected = dialog.select(u"Cortana Display", feed_list)
     
     if selected >= 0:
         name, url = feeds[selected]
