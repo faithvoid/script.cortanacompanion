@@ -26,6 +26,7 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 
 ## TODO: 
 - Add scrolling to "Playing" section.
+- Set up key buttons to function with XBMC (play / pause / stop? or shutdown / restart / reboot?)
 - Clean up code further
 - [Integrate multi-page support like in my other script, PiHOLED.](https://github.com/faithvoid/PiHOLED). Default page will be system staps, then moving the joystick will select either Music or Movie information.
 - [Integrate with Cortana Wireless to also function as a network adapter for the original Xbox.](https://github.com/faithvoid/script.cortanawireless)
