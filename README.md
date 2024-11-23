@@ -1,7 +1,7 @@
 # Cortana Companion
 A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, designed to emulate the front LCD/OLED screen of a hardmodded Xbox for softmodded units. 
 
-![Cortana Companion running on a Pi Zero W](https://github.com/user-attachments/assets/6c19ce64-17a0-4488-9944-2573175d4301)
+![Cortana Companion running on a Pi Zero W](https://github.com/user-attachments/assets/3a22c738-d332-4a33-b841-3ec1ceb503a3)
 
 
 ## Requirements:
