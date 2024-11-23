@@ -30,6 +30,7 @@ Next, open "stats.py", add "bios_version = xbmc.getInfoLabel("system.bios")" und
 If all is said and done, you should see BIOS information instead of Now Playing information upon the next script launch!
 
 ## Bugs:
+- Some songs return symbols that cause the title/track names to bug out and not appear or spam errors in the log. 
 - You tell me.
 
 ## TODO: 
