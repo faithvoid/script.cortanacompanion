@@ -18,6 +18,7 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 
 ## Xbox Instructions:
 - Extract CortanaCompanion into any Q:\scripts\CortanaCompanion
+- Modify the IP address section in "stats.py" to point to the IP address of your Raspberry Pi
 - Launch "default.py" from the Scripts manager in XBMC and select "Start Cortana Companion", and select "Stop Cortana Companion" to stop the script.
 - You should immediately start seeing stats on your Raspberry Pi display! Note that this does nothing outside of XBMC, so that means when you're in-game your system stats won't update until you boot into XBMC again!
 
