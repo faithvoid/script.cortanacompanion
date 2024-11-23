@@ -7,8 +7,8 @@ def main():
     dialog = xbmcgui.Dialog()
     feeds = [
         ("- System Stats - )", ""),
-        ("Enable", "RunScript(Q:\\scripts\\RemoteStats\\stats.py)"),
-        ("Disable", "StopScript(Q:\\scripts\\RemoteStats\\stats.py)"),
+        ("Start Cortana Display", "RunScript(Q:\\scripts\\RemoteStats\\stats.py)"),
+        ("Stop Cortana Display", "StopScript(Q:\\scripts\\RemoteStats\\stats.py)"),
     ]
     
     feed_list = [name for name, _ in feeds]
