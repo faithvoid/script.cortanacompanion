@@ -22,11 +22,11 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 - You should immediately start seeing stats on your Raspberry Pi display! Note that this does nothing outside of XBMC, so that means when you're in-game your system stats won't update until you boot into XBMC again!
 
 ## Bugs:
-- BIOS name alternates between actual BIOS name and "Busy". This seems to be XBMC behaviour, not sure how to fix it!
+- You tell me.
 
 ## TODO: 
+- Add scrolling to "Playing" section.
 - Clean up code further
-- Generate systemctl startup file for Pi to launch the script on boot.
 - [Integrate multi-page support like in my other script, PiHOLED.](https://github.com/faithvoid/PiHOLED). Default page will be system staps, then moving the joystick will select either Music or Movie information.
 - [Integrate with Cortana Wireless to also function as a network adapter for the original Xbox.](https://github.com/faithvoid/script.cortanawireless)
 
