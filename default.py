@@ -7,12 +7,12 @@ def main():
     dialog = xbmcgui.Dialog()
     feeds = [
         ("- System Stats - )", ""),
-        ("Start Cortana Display", "RunScript(Q:\\scripts\\RemoteStats\\stats.py)"),
-        ("Stop Cortana Display", "StopScript(Q:\\scripts\\RemoteStats\\stats.py)"),
+        ("Start Cortana Companion", "RunScript(Q:\\scripts\\CortanaCompanion\\stats.py)"),
+        ("Stop Cortana Companion", "StopScript(Q:\\scripts\\CortanaCompanion\\stats.py)"),
     ]
     
     feed_list = [name for name, _ in feeds]
-    selected = dialog.select(u"Cortana Display", feed_list)
+    selected = dialog.select(u"Cortana Companion", feed_list)
     
     if selected >= 0:
         name, url = feeds[selected]
