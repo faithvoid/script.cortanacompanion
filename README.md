@@ -1,7 +1,7 @@
-# script.cortanadisplay
+# script.cortanacompanion
 A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, designed to emulate the front LCD/OLED screen of a hardmodded Xbox for softmodded units. 
 
-![Cortana Display running on a Pi Zero W](https://github.com/user-attachments/assets/6c19ce64-17a0-4488-9944-2573175d4301)
+![Cortana Companion running on a Pi Zero W](https://github.com/user-attachments/assets/6c19ce64-17a0-4488-9944-2573175d4301)
 
 
 ## Requirements:
@@ -17,8 +17,8 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 - Launch "raspberry.py" on your Raspberry Pi so that it's running in the background.
 
 ## Xbox Instructions:
-- Extract XBMCDisplay into any Q:\scripts folder (ideally CortanaDisplay)
-- Launch "default.py" from the Scripts manager in XBMC and select "Start Cortana Display", and select "Stop Cortana Display" to stop the script.
+- Extract CortanaCompanion into any Q:\scripts\CortanaCompanion
+- Launch "default.py" from the Scripts manager in XBMC and select "Start Cortana Companion", and select "Stop Cortana Companion" to stop the script.
 - You should immediately start seeing stats on your Raspberry Pi display! Note that this does nothing outside of XBMC, so that means when you're in-game your system stats won't update until you boot into XBMC again!
 
 ## Bugs:
