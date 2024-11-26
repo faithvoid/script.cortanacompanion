@@ -34,6 +34,7 @@ If all is said and done, you should see BIOS information instead of Now Playing 
 - You tell me.
 
 ## TODO: 
+- Fix "Storage" command (currently returns total HDD space instead of total **FREE** HDD space.)
 - Add scrolling to "Playing" section.
 - Set up key buttons to function with XBMC (play / pause / stop? or shutdown / restart / reboot?)
 - Clean up code further
