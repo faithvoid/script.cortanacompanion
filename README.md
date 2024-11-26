@@ -41,6 +41,7 @@ If all is said and done, you should see BIOS information instead of Now Playing 
 - Explain the customization section better.
 - [Integrate multi-page support like in my other script, PiHOLED.](https://github.com/faithvoid/PiHOLED). Default page will be system staps, then moving the joystick will select either Music or Movie information.
 - [Integrate with Cortana Wireless to also function as a network adapter for the original Xbox.](https://github.com/faithvoid/script.cortanawireless)
+- Redirect Xbox Live DNS to Insignia DNS by default.
 
 # Why?
 I just think it's neat. :) As someone using a 1.6 softmod I love how the LCD on hardmods looks and wanted to replicate something for softmod users to place on/around their Xbox with no hardware modification required.
