@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /home/dietpi/raspberry.py
+ExecStart=/usr/bin/python3 /opt/CortanaDisplay/CortanaDisplay.py
 Restart=on-abort
 
 [Install]
