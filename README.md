@@ -12,12 +12,13 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 - Python 2.7 on XBMC4Xbox, Python 3+ for Raspberry Pi.
 
 ## Raspberry Pi Instructions:
-- Copy "raspberry.pi" anywhere on your Raspberry Pi.
+- Copy "CortanaCompanion.py" to "/opt/CortanaCompanion" on your Raspberry Pi.
 - Install the required dependencies (sudo apt install python3 python3-rpi.gpio python3-luma.oled)
-- Launch "raspberry.py" on your Raspberry Pi so that it's running in the background.
+- Launch "python3 /opt/CortanaCompanion/CortanaCompanion.py" on your Raspberry Pi so that it's running in the background.
+- (Optional) To run this on every boot, copy "CortanaCompanion.service" to /etc/systemd/system & type "sudo systemctl enable CortanaCompanion", then Cortana Companion should launch every boot!
 
 ## Xbox Instructions:
-- Extract CortanaCompanion into any Q:\scripts\CortanaCompanion
+- Extract CortanaDisplay into any Q:\scripts\CortanaCompanion
 - Modify the IP address section in "stats.py" to point to the IP address of your Raspberry Pi
 - Launch "default.py" from the Scripts manager in XBMC and select "Start Cortana Companion", and select "Stop Cortana Companion" to stop the script.
 - You should immediately start seeing stats on your Raspberry Pi display! Note that this does nothing outside of XBMC, so that means when you're in-game your system stats won't update until you boot into XBMC again!
@@ -41,7 +42,6 @@ If all is said and done, you should see BIOS information instead of Now Playing 
 - Explain the customization section better.
 - [Integrate multi-page support like in my other script, PiHOLED.](https://github.com/faithvoid/PiHOLED). Default page will be system staps, then moving the joystick will select either Music or Movie information.
 - [Integrate with Cortana Wireless to also function as a network adapter for the original Xbox.](https://github.com/faithvoid/script.cortanawireless)
-- Redirect Xbox Live DNS to Insignia DNS by default.
-
+- 
 # Why?
 I just think it's neat. :) As someone using a 1.6 softmod I love how the LCD on hardmods looks and wanted to replicate something for softmod users to place on/around their Xbox with no hardware modification required.
