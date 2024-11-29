@@ -12,10 +12,8 @@ A remote SH1106/SSD1306 display script for XBMC4Xbox using a Raspberry Pi, desig
 - Python 2.7 on XBMC4Xbox, Python 3+ for Raspberry Pi.
 
 ## Raspberry Pi Instructions:
-- Copy "CortanaCompanion.py" to "/opt/CortanaCompanion" on your Raspberry Pi.
-- Install the required dependencies (sudo apt install python3 python3-rpi.gpio python3-luma.oled)
-- Launch "python3 /opt/CortanaCompanion/CortanaCompanion.py" on your Raspberry Pi so that it's running in the background.
-- (Optional) To run this on every boot, copy "CortanaCompanion.service" to /etc/systemd/system & type "sudo systemctl enable CortanaCompanion", then Cortana Companion should launch every boot!
+- Enter the line down below in your Pi's terminal after setting up your distro of choice!
+- ``` curl -sL https://raw.githubusercontent.com/faithvoid/script.cortanacompanion/refs/heads/main/install.sh | bash ```
 
 ## Xbox Instructions:
 - Extract CortanaCompanion into Q:\scripts\CortanaCompanion
