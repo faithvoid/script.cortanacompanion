@@ -1,10 +1,10 @@
 [Unit]
-Description=Cortana Display
+Description=Cortana Companion
 After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /opt/CortanaDisplay/CortanaDisplay.py
+ExecStart=/usr/bin/python3 /opt/CortanaCompanion/CortanaCompanion.py
 Restart=on-abort
 
 [Install]
