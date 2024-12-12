@@ -25,7 +25,7 @@ done
 
 # Download required files
 wget https://raw.githubusercontent.com/faithvoid/script.cortanacompanion/refs/heads/main/release/CortanaCompanion.py
-wget https://raw.githubusercontent.com/faithvoid/script.cortanacompanion/refs/heads/main/release/CortanaDisplay.service
+wget https://raw.githubusercontent.com/faithvoid/script.cortanacompanion/refs/heads/main/release/CortanaCompanion.service
 mkdir /opt/CortanaCompanion
 
 # Copy service files to systemd directory
